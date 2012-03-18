@@ -36,27 +36,27 @@ set wildmenu                  " menu has tab completion
 let maplocalleader=','        " all my macros start with ,
 set laststatus=2
 
-"  searching
-"  set incsearch                 " incremental search
-"  set ignorecase                " search ignoring case
-"  set hlsearch                  " highlight the search
-"  set showmatch                 " show matching bracket
-"  set diffopt=filler,iwhite     " ignore all whitespace and sync
-"
-"  "  backup
-"  set backup
-"  set backupdir=~/.vim_backup
-"  set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
-"  "set viminfo='100,f1
-"
-"  " spelling
-"  if v:version >= 700
-"    " Enable spell check for text files
-"      autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
-"      endif
-"
-"      " mappings
-"      " toggle list mode
-"      nmap <LocalLeader>tl :set list!<cr>
-"      " toggle paste mode
-"      nmap <LocalLeader>pp :set paste!<cr>
+" searching
+set incsearch                 " incremental search
+set ignorecase                " search ignoring case
+set hlsearch                  " highlight the search
+set showmatch                 " show matching bracket
+set diffopt=filler,iwhite     " ignore all whitespace and sync
+
+" backup
+set backup
+set backupdir=~/.vim_backup
+set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
+set viminfo='100,f1
+
+" spelling
+if v:version >= 700
+  " Enable spell check for text files
+  autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
+endif
+
+" mappings
+" toggle list mode
+nmap <LocalLeader>tl :set list!<cr>
+" toggle paste mode
+nmap <LocalLeader>pp :set paste!<cr>
